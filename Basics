@@ -2,7 +2,17 @@ Lightning apps cant be included in LEX
 Lightning app can directly get query string parameters by setting them as attributes
 /c/oneApp.app?testAtrribute=values
 
+
 for getting query string parameters inside aura components
 /lightning/cmp/c__<componentName>?c__testAttribute=values
 dont want to specify aura attrubutes directly get them
 {!v.pageReference.state.c__testAttribute}
+
+Aura components can be used as screen flows or as flow actions
+You can either embed a flow inside aura component or embed an aura component inside a flow and make communications
+from both the ends
+
+if aura component should be available in flow:
+<aura:component implements="lightning:availableForFlowScreens,lightning:availableForFlowActions,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+implement this interfaces
+
