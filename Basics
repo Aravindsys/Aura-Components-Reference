@@ -1,0 +1,8 @@
+Lightning apps cant be included in LEX
+Lightning app can directly get query string parameters by setting them as attributes
+/c/oneApp.app?testAtrribute=values
+
+for getting query string parameters inside aura components
+/lightning/cmp/c__<componentName>?c__testAttribute=values
+dont want to specify aura attrubutes directly get them
+{!v.pageReference.state.c__testAttribute}
