@@ -16,3 +16,20 @@ if aura component should be available in flow:
 <aura:component implements="lightning:availableForFlowScreens,lightning:availableForFlowActions,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 implement this interfaces
 
+Lightning:card supported aura:set attribute values
+title //overridden
+body //not-overridden
+actions 
+footer
+
+lightning:button alignment can be modelled by
+ <div class="slds-clearfix">
+        <lightning-button label="Left" class="slds-float_left"></lightning-button>
+    </div>
+    <div class="slds-clearfix">
+        <lightning-button label="I am Center" class="slds-align_absolute-center"></lightning-button>
+    </div>
+    <div class="slds-clearfix">
+        <lightning-button label="I am Right" class="slds-float_right"></lightning-button>
+ </div>
+
